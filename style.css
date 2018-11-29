@@ -1,0 +1,103 @@
+html,
+body {
+  height: 100%; 
+}
+body{
+    background-image: url(mountain.png) ;
+    background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+page {
+   min-height: 100%;
+   position: relative;
+}
+ 
+/*  для шапки */
+header {
+   background:rgba(250, 249, 249, 0.95);
+   height: 5px;
+}
+ 
+/* для контента */
+content {
+   padding-top: 30px;
+   padding-bottom: 50px;
+}
+dd{
+    font-family: Trebuchet MS , serif;
+    font-size: 15px;
+    background: rgba(0, 0, 0, 0);
+}
+#text{
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    margin-left: 500px;
+    font-size: 50px;
+    color: #fafafa;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+   text-align: center;
+     z-index: 1;
+     font-weight: 700;
+}
+    
+#rect{
+    font-size: 15px;
+    font-family: Trebuchet MS , serif;
+}
+.rectangle {
+    counter-reset: li; 
+    list-style: none; 
+    font: 14px "Trebuchet MS", "Lucida Sans";
+    padding: 0;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    }
+    .rectangle a {
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em .8em;
+    margin: .5em 0 .5em 2.5em;
+    background: #D3D4DA;
+    color: #444;
+    text-decoration: none;
+    transition: all .3s ease-out;
+    }
+    .rectangle a:hover {background: #DCDDE1;}       
+    .rectangle a:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -2.5em;
+    top: 50%;
+    margin-top: -1em;
+    background: #9097A2;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+    }
+    .rectangle a:after {
+    position: absolute;
+    content: "";
+    border: .5em solid transparent;
+    left: -1em;
+    top: 50%;
+    margin-top: -.5em;
+    transition: all .3s ease-out;
+    }
+    .rectangle a:hover:after {
+    left: -.5em;
+    border-left-color: #9097A2;
+    }
+
+
+/* для подвала сайта */
+footer {
+   position: absolute;
+   bottom: 0; 
+   width: 100%;
+   height: 20px;   /* Высота блока footer */
+   background: rgba(250, 249, 249, 0.95);
+}
